@@ -20,6 +20,7 @@ public class TestMod
 
     private static final Logger LOGGER = LogUtils.getLogger();
 
+    // Testing the commit
     public TestMod()
     {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
