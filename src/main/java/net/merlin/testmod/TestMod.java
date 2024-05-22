@@ -1,6 +1,7 @@
 package net.merlin.testmod;
 
 import com.mojang.logging.LogUtils;
+import net.merlin.testmod.blocks.ModBlocks;
 import net.merlin.testmod.item.ModCreativeModTabs;
 import net.merlin.testmod.item.ModItems;
 import net.minecraft.world.item.CreativeModeTabs;
@@ -32,6 +33,7 @@ public class TestMod
         ModCreativeModTabs.register(modEventBus);
 
         ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
 

@@ -1,6 +1,7 @@
 package net.merlin.testmod.item;
 
 import net.merlin.testmod.TestMod;
+import net.merlin.testmod.blocks.ModBlocks;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.Item;
@@ -21,7 +22,8 @@ public class ModCreativeModTabs {
                     .displayItems((itemDisplayParameters, output) -> {
                         output.accept(ModItems.RUBY.get());
                         output.accept(ModItems.RAW_RUBY.get());
-
+                        output.accept(ModBlocks.RUBY_BLOCK.get());
+                        output.accept(ModBlocks.RAW_RUBY_BLOCK.get());
                     })
                     .build());
 
