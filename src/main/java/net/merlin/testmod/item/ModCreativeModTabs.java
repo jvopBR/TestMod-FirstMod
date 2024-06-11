@@ -24,6 +24,10 @@ public class ModCreativeModTabs {
                         output.accept(ModItems.RAW_RUBY.get());
                         output.accept(ModBlocks.RUBY_BLOCK.get());
                         output.accept(ModBlocks.RAW_RUBY_BLOCK.get());
+                        output.accept(ModBlocks.RUBY_ORE.get());
+                        output.accept(ModBlocks.DEEPSLATE_RUBY_ORE.get());
+                        output.accept(ModBlocks.NETHER_RUBY_ORE.get());
+                        output.accept(ModBlocks.END_STONE_RUBY_ORE.get());
                     })
                     .build());
 
