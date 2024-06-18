@@ -1,6 +1,7 @@
 package net.merlin.testmod.item;
 
 import net.merlin.testmod.TestMod;
+import net.merlin.testmod.item.custom.FuelItem;
 import net.merlin.testmod.item.custom.MetalDetectorItem;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraft.world.item.Item;
@@ -20,6 +21,8 @@ public class ModItems {
             () -> new MetalDetectorItem(new Item.Properties().durability(100)));
     public static final RegistryObject<Item> STRAWBERRY = ITEMS.register("strawberry",
             () -> new Item(new Item.Properties().food(ModFoods.STRAWBERRY)));
+    public static final RegistryObject<Item> PINE_CONE = ITEMS.register("pine_cone",
+            () -> new FuelItem(new Item.Properties(), 400));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
